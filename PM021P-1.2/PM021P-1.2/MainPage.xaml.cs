@@ -7,21 +7,38 @@
         public MainPage()
         {
             InitializeComponent();
+
+            fechaNacimientoPicker.DateSelected += (sender, e) =>
+            {
+                DateTime selectedDate = e.NewDate;
+                // Puedes hacer algo con la fecha seleccionada, como almacenarla en tu objeto NombreEmpleado.
+            };
         }
 
         private void Guardar_Clicked(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(nombresEntry.Text) || string.IsNullOrWhiteSpace(apellidosEntry.Text) || string.IsNullOrWhiteSpace(correoEntry.Text))
+            {
+                DisplayAlert("Error","Por favor, complete todos los campos.", "OK");
+                return; // No continuar con el procesamiento si los campos están vacíos.
+            }
+
+            if (fechaNacimientoPicker.Date == DateTime.MinValue)
+            {
+                DisplayAlert("Error", "Por favor, seleccione una fecha de nacimiento válida.", "OK");
+                return; // No continuar con el procesamiento si la fecha es inválida.
+            }
+
+
             NombreEmpleado empleado = new NombreEmpleado
             {
                 Nombres = nombresEntry.Text,
                 Apellidos = apellidosEntry.Text,
-                Correo = correoEntry.Text
+                Correo = correoEntry.Text,
+                FechaNacimiento = fechaNacimientoPicker.Date
             };
 
-            if (DateTime.TryParse(fechaNacimientoEntry.Text, out DateTime fechaNacimiento))
-            {
-                empleado.FechaNacimiento = fechaNacimiento;
-            }
+          
 
             if (empleado.IsValid())
             {

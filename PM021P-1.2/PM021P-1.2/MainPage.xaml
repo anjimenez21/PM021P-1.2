@@ -5,9 +5,12 @@
 
     <ScrollView>
         <StackLayout>
+            <Image Source="uth.png" Aspect="AspectFill" HeightRequest="200" WidthRequest="300" />
             <Entry Placeholder="Nombres" x:Name="nombresEntry" />
             <Entry Placeholder="Apellidos" x:Name="apellidosEntry" />
-            <Entry Placeholder="Fecha de Nacimiento (yyyy-MM-dd)" x:Name="fechaNacimientoEntry" />
+            <Label Text="Fecha de Nacimiento" />
+            <DatePicker  x:Name="fechaNacimientoPicker" />
+            <!--<Entry Placeholder="Fecha de Nacimiento (yyyy-MM-dd)" x:Name="fechaNacimientoEntry" />-->
             <Entry Placeholder="Correo Electrónico" x:Name="correoEntry" />
             <Button Text="Guardar" Clicked="Guardar_Clicked" />
         </StackLayout>

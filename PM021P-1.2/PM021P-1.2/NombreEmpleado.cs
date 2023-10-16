@@ -16,19 +16,19 @@ namespace PM021P_1._2
 
         public bool IsValid()
         {
-            // Validar el formato del correo electrónico con una expresión regular
-            if (!string.IsNullOrEmpty(Correo))
-            {
-                string correoPattern = @"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$";
-                if (!Regex.IsMatch(Correo, correoPattern))
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
 
-        public NombreEmpleado() { 
+            if (string.IsNullOrWhiteSpace(Correo))
+            {
+                return false; // El campo de correo está vacío o solo contiene espacios en blanco.
+            }
+
+            string correoPattern = @"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$";
+            if (!Regex.IsMatch(Correo, correoPattern))
+            {
+                return false; // El correo no cumple con el formato válido.
+            }
+
+            return true;
         }
     }
 }
