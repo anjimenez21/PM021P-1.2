@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM021P_1._2.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Entry Placeholder="Nombres" x:Name="nombresEntry" />
+            <Entry Placeholder="Apellidos" x:Name="apellidosEntry" />
+            <Entry Placeholder="Fecha de Nacimiento (yyyy-MM-dd)" x:Name="fechaNacimientoEntry" />
+            <Entry Placeholder="Correo Electrónico" x:Name="correoEntry" />
+            <Button Text="Guardar" Clicked="Guardar_Clicked" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
