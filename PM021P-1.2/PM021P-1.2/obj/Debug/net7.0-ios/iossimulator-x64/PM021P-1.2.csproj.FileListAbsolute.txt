@@ -267,3 +267,4 @@ C:\Users\USUARIO\Documents\GitHub\PM021P-1.2\PM021P-1.2\PM021P-1.2\obj\Debug\net
 C:\Users\USUARIO\Documents\GitHub\PM021P-1.2\PM021P-1.2\PM021P-1.2\obj\Debug\net7.0-ios\iossimulator-x64\PM021P-1.2.pdb
 C:\Users\USUARIO\Documents\GitHub\PM021P-1.2\PM021P-1.2\PM021P-1.2\obj\Debug\net7.0-ios\iossimulator-x64\PM021P-1.2.genruntimeconfig.cache
 C:\Users\USUARIO\Documents\GitHub\PM021P-1.2\PM021P-1.2\PM021P-1.2\obj\Debug\net7.0-ios\iossimulator-x64\ref\PM021P-1.2.dll
+C:\Users\USUARIO\Documents\GitHub\PM021P-1.2\PM021P-1.2\PM021P-1.2\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\uth.jpg

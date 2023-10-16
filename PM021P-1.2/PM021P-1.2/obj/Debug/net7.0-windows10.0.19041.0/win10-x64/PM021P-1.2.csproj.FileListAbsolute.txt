@@ -322,3 +322,4 @@ C:\Users\USUARIO\Documents\GitHub\PM021P-1.2\PM021P-1.2\PM021P-1.2\obj\Debug\net
 C:\Users\USUARIO\Documents\GitHub\PM021P-1.2\PM021P-1.2\PM021P-1.2\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\USUARIO\Documents\GitHub\PM021P-1.2\PM021P-1.2\PM021P-1.2\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\USUARIO\Documents\GitHub\PM021P-1.2\PM021P-1.2\PM021P-1.2\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\USUARIO\Documents\GitHub\PM021P-1.2\PM021P-1.2\PM021P-1.2\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\uth.scale-100.jpg
